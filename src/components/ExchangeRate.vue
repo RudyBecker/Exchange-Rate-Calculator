@@ -23,6 +23,8 @@
     <br />
     <h2>You can buy this much bitcoin!</h2>
     <p>{{ calculate }}</p>
+    <br />
+    <p>Coded by Rudy Becker</p>
   </div>
 </template>
 
