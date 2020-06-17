@@ -16,7 +16,7 @@
       style="width: 50%; margin: 0 auto;"
       size="sm"
       prepend="$"
-      append=".00"
+      
     >
       <b-form-input v-model="inputVal"></b-form-input>
     </b-input-group>
@@ -34,7 +34,7 @@ export default {
   data: () => ({
     info: null,
     inputVal: "",
-    bitcoin: 10000,
+    bitcoin: null,
   }),
 
   computed: {
@@ -46,7 +46,12 @@ export default {
   mounted() {
     axios
       .get("https://api.coindesk.com/v1/bpi/currentprice.json")
-      .then((response) => (this.info = response.data.bpi));
+      .then(
+        (response) => (
+          (this.info = response.data.bpi),
+          (this.bitcoin = response.data.bpi.USD.rate_float)
+        )
+      );
   },
 
   filters: {
