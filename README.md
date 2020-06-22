@@ -1,4 +1,6 @@
-# exchange-app
+# Bitcoin Exchange Rate Calculator
+
+This app was made in less than four hours during a Hackathon in June 2020. 
 
 ## Project setup
 ```
