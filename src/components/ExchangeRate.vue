@@ -1,7 +1,7 @@
 <template>
   <div class="exchange-rate" id="app">
     <h1>Live Bitcoin Price Index</h1>
-    <h5>provided from CoinDesk.com</h5>
+    <h5>provided by CoinDesk.com</h5>
     <div>
       <span></span>
     </div>
